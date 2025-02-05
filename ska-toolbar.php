@@ -7,7 +7,7 @@
  * License: GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: ska-toolbar
- * Version: 1.0.0
+ * Version: 1.0.1
  */
 
 namespace ska\toolbar;
@@ -44,3 +44,17 @@ function editor_assets() {
 	);
 }
 add_action('enqueue_block_editor_assets', __NAMESPACE__ . '\\editor_assets');
+
+/**
+ * Add GitHub link on the plugins page.
+ *
+ * @param array $plugin_meta
+ * @param string $plugin_file
+ * @return array
+ */
+add_filter('plugin_row_meta', function($plugin_meta, $plugin_file) {
+	if($plugin_file === 'ska-toolbar/ska-toolbar.php') {
+		$plugin_meta[] = '<a href="https://github.com/ska-dev-1/ska-toolbar" target="_blank" rel="noopener noreferrer">GitHub</a>';
+	}
+	return $plugin_meta;
+}, 10, 2);
