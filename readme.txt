@@ -14,8 +14,6 @@ Adds a toolbar with quick actions to the Block Editor.
 
 Adds a compact group of additional buttons to the Block Editor toolbar that allow to perform common actions without using hotkeys or opening dropdown menus.
 
-[Demo on WordPress playground](https://playground.wordpress.net/?plugin=ska-toolbar&url=%2Fwp-admin%2Fpost.php%3Fpost%3D2%26action%3Dedit)
-
 Available actions:
 
 * Insert before
