@@ -2,7 +2,7 @@
 Contributors: skadev
 Tags: insert, group, copy, cut, duplicate
 Requires at least: 6.7
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 8.1
 Stable tag: 1.0.1
 License: GPLv2 or later
@@ -48,7 +48,9 @@ Available actions:
 == Changelog ==
 
 = 1.0.1 =
+* WP 6.8.
 * Added GitHub link.
+* Added Requires PHP.
 
 = 1.0.0 =
 * No changes.
