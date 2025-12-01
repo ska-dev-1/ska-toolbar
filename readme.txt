@@ -1,10 +1,11 @@
 === ska-toolbar ===
 Contributors: skadev
+Donate link: https://buymeacoffee.com/skadev
 Tags: insert, group, copy, cut, duplicate
 Requires at least: 6.7
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 8.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,6 +47,9 @@ Available actions:
 2. Activate the plugin from **WordPress admin dashboard -> Plugins**.
 
 == Changelog ==
+
+= 1.0.2 =
+* WP 6.9.
 
 = 1.0.1 =
 * WP 6.8.
