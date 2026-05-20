@@ -7,7 +7,7 @@
  * License: GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: ska-toolbar
- * Version: 1.0.2
+ * Version: 1.0.3
  * Requires PHP: 8.1
  */
 
@@ -26,6 +26,7 @@ define('SKA_TOOLBAR_DIR', dirname(__FILE__));
  */
 function editor_assets() {
 
+	/** @var array */
 	$asset = include SKA_TOOLBAR_DIR . '/build/index.asset.php';
 
 	wp_enqueue_style(
