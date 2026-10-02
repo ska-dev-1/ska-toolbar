@@ -7,7 +7,7 @@
  * License: GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: ska-toolbar
- * Version: 1.0.4
+ * Version: 1.0.5
  * Requires PHP: 8.1
  */
 

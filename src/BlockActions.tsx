@@ -159,7 +159,9 @@ const BlockActions: React.FC<BlockActionsProps> = ({
 				return
 			}
 			const groupingBlockName = getGroupingBlockName()
-			replaceBlocks(clientIds, [createBlock(groupingBlockName, {}, blocks.map(block => cloneBlock(block)))])
+			if(groupingBlockName) {
+				replaceBlocks(clientIds, [createBlock(groupingBlockName, {}, blocks.map(block => cloneBlock(block)))])
+			}
 		},
 		onUngroup() {
 			if(!blocks.length) {

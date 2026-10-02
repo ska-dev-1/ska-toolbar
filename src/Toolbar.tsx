@@ -1,5 +1,6 @@
 import * as React from 'react'
 import {__, _n} from '@wordpress/i18n'
+import cx from 'classnames'
 
 import {
 	ToolbarGroup,
@@ -33,7 +34,7 @@ import BlockActions from './BlockActions'
 import ToolbarGroupContainer from './ToolbarGroupContainer'
 import ToolbarCopyButton from './ToolbarCopyButton'
 
-const Toolbar: React.FC = () => {
+const Toolbar: React.FC<{className?: string}> = ({className}) => {
 
 	const blockClientIds = useSelect(select => select(blockEditorStore).getSelectedBlockClientIds(), [])
 	if(!blockClientIds.length) {
@@ -61,17 +62,19 @@ const Toolbar: React.FC = () => {
 				onCut,
 				onStripMetadata,
 			}) => (
-				<ToolbarGroup className='ska-toolbar'>
+				<ToolbarGroup className={cx('ska-toolbar', className)}>
 					<ToolbarGroupContainer>
 						<ToolbarButton
 							icon={insertBeforeIcon}
 							title={__('Insert before', 'ska-toolbar')}
 							onClick={onInsertBefore}
+							className='ska-toolbar__insert-before'
 						/>
 						<ToolbarButton
 							icon={insertAfterIcon}
 							title={__('Insert after', 'ska-toolbar')}
 							onClick={onInsertAfter}
+							className='ska-toolbar__insert-after'
 						/>
 					</ToolbarGroupContainer>
 					<ToolbarGroupContainer>

@@ -5,7 +5,7 @@ Tags: insert, group, copy, cut, duplicate
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,6 +47,10 @@ Available actions:
 2. Activate the plugin from **WordPress admin dashboard -> Plugins**.
 
 == Changelog ==
+
+= 1.0.5 =
+* Toolbar is now injected into the DOM to remain visible even when an appropriate BlockControls Slot is not available (only applies when the "Top toolbar" editor setting is enabled).
+* Adjusted misaligned icons positioning.
 
 = 1.0.4 =
 * Tested with WordPress 7.1.

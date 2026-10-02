@@ -21,7 +21,9 @@
 		"@wordpress/i18n": "^6.9.0",
 		"@wordpress/icons": "^11.3.0",
 		"@wordpress/notices": "^5.36.0",
+		"@wordpress/plugins": "^7.55.0",
 		"@wordpress/scripts": "^30.15.0",
+		"classnames": "^2.5.1",
 		"react": "^18.3.1"
 	},
 	"packageManager": "pnpm@10.24.0+sha256.196f4bd174ebcbd99786b33452f144cb2dc32ef4e7138ed44491e9d43d702d75"
